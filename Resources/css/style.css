@@ -1,0 +1,402 @@
+/* Document information
+        -Document: thé thème
+        -Version: 1.0.0
+        -Author : Hugo
+*/
+
+/* Colors
+        defaut body text #eee
+        h1 white
+        h2 black
+        h3
+        
+        button
+        button:hover
+
+        icon #57a515
+        border
+*/
+
+/* Fonts
+        -Default
+        -Subtitle*/
+
+/* CSS DIRECTORY
+        1.=Global
+        2.=Header
+        3.=Produits
+*/
+
+/*  Global
+=================================== */
+html {
+        background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+        font-family: 'lato', 'arial', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-weight: 300;
+        word-spacing: 8px;
+}
+
+h1 {
+        color: white;
+}
+
+
+h2 {
+        color: black;
+        font-size: 250%;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+}
+
+h2:after {
+        display: block;
+        height: 2px;
+        background-color: green;
+        width: 100px;
+        content: "";
+        /*<!------->*/
+        margin: 0 auto;
+        margin-top: 10px;
+}
+
+h3 {
+        font-size: 160%;
+}
+
+p {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 24px;
+}
+
+section {
+        padding: 30px 0 60px 0;
+}
+
+/* HEADER
+    =======================*/
+header {
+        background-image: linear-gradient(rgba(0, 242, 96, 0.1),
+                        rgba(230, 7, 1, 0.2)),
+                url(../png/header.jpeg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+}
+
+.home-title {
+        position: absolute;
+        top: 30%;
+}
+
+.home-title h1 {
+        font-size: 340%;
+        color: white;
+}
+
+.home-title h1 span {
+        font-weight: 700;
+}
+
+.home-title p {
+        color: white;
+}
+
+.btn {
+        display: inline-block;
+        padding: 10px 30px;
+        text-decoration: none;
+        border-radius: 20px;
+        transition: background-color 0.5s, color 2s, border 0.5s;
+        margin-bottom: 20px;
+}
+
+.btn-full {
+        background-color: azure;
+        color: rgb(230, 7, 1);
+        margin-right: 15px;
+}
+
+.btn-ghost {
+        border: 1px solid #fff;
+        color: #fff;
+}
+
+.btn-full:hover {
+        background-color: rgb(230, 7, 1, 0.7);
+        color: #fff;
+}
+
+.btn-ghost:hover {
+        background-color: rgb(230, 7, 1, 0.7);
+        /*border: 1px solid rgb(230, 7,1,0.7);*/
+        color: #fff;
+
+}
+
+/*  Produits
+=================================== */
+.produits-plus {
+        margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon {
+        color: rgb(230, 7, 1, 0.7);
+        transform: translateX(20px);
+        transition: 0.75s;
+}
+
+.produits-plus:hover .col-md-10 {
+        /*texte*/
+        transform: translateX(20px)translateY(-2px);
+        transition: 2s;
+
+}
+
+.produits-img {
+        max-width: 100%;
+        height: auto;
+}
+
+.produits-icon {
+        font-size: 34px;
+        color: #57a515;
+}
+
+
+/*  Famille des thés
+=================================== */
+.famille-the {
+        background-color: rgb(230, 7, 1, 0.07);
+}
+
+.famille-details {
+        background-color: #fff;
+        padding: 40px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(230, 9, 1, 0.095);
+        margin-bottom: 20px;
+
+}
+
+.famille-details img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+}
+
+.famille-details h4 {
+        text-align: center;
+        color: rgb(230, 7, 1, 0.7);
+}
+
+
+/*  Galeries photos
+=================================== */
+.galeries-img {
+        display: block;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(183, 183, 183, 0.8);
+        margin-bottom: 30px;
+}
+
+.galeries-titre {
+        bottom: 40px;
+        left: 40px;
+}
+
+.galeries-titre h4 {
+        position: relative;
+        color: white;
+}
+
+/*  Clients
+=================================== */
+
+.clients {
+        background-image: url(../png/header.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+.clients h2 {
+        color: white;
+}
+
+.clients h2:after {
+        background-color: #fff;
+}
+
+.clients blockquote {
+        padding: 5px;
+        font-style: italic;
+        line-height: 130%;
+        color: white;
+}
+
+blockquote:before {
+        content: ”\0022″;
+        font-size: 800%;
+        font-family: 'Sanchez', serif;
+}
+
+cite {
+        font-size: 90%;
+        display: block;
+        margin-top: 20px;
+}
+
+cite img {
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+}
+
+.icone-speak-right {
+        margin-right: 10px;
+
+}
+
+/*   Packs
+=================================== */
+
+.pack {
+        box-shadow: 0 0 5px rgba(0, 0, 0.3);
+        border-radius: 10px;
+        margin-bottom: 20px;
+}
+
+.pack h3 {
+        color: #57a515;
+        font-weight: 400;
+}
+
+.pack h4 {
+        font-weight: 100;
+}
+
+.pack span {
+        font-weight: 100;
+        font-size: 40%;
+        position: relative;
+        top: -15px;
+        left: 4px;
+}
+
+.pack-premium {
+        background-color: rgb(17, 125, 17);
+        color: #fff;
+}
+
+.pack-title {
+        padding: 10px 10px 0 10px;
+        border-bottom: 1px solid #f6f6f6;
+}
+
+.pack-title-premium {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 400;
+        background-color: #ffff;
+        color: rgb(17, 125, 17);
+        border-radius: 10px;
+        padding: 5px;
+}
+
+
+.pack-content ul {
+        list-style: none;
+        padding: 20px;
+        font-weight: 300;
+        line-height: 35px;
+}
+
+.pack-content ul li i {
+        font-size: 90%;
+        margin-right: 10px;
+}
+
+.pack-signup {
+        text-align: center;
+}
+
+.pack-signup:hover .btn-pack {
+        color: #2a962a;
+        transition: 0.75s;
+}
+
+.btn-pack {
+        background-color: #57a515;
+        color: white;
+        margin-bottom: 20px;
+}
+
+/*  Contact
+=================================== */
+.contact-form {
+        margin-bottom: 30px;
+}
+.contact-form input{
+        outline: 2px solid #2a962a45;
+        border-radius: 10px;
+
+}
+.contact-message {
+        width: 100%;
+        outline: 2px solid #2a962a45;
+        border-radius: 10px;
+}
+.btn-contact {
+        transition: 0.75s;
+        margin-right: 15px;
+        background-color: #57a515;
+}
+
+.map {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+        filter:  invert(87%);
+}
+.map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+}
+/*   Footer
+=================================== */
+
+footer{
+        background-color: #2a962a;
+        color: white;
+        height: 60px;
+        text-align: center;
+        padding: 20px 20px;
+}
+
+.copyright {
+        text-align: center;
+        
+}
+
+.copyright a {
+        color: white;
+}
+
