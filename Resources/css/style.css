@@ -87,7 +87,7 @@ section {
 header {
         background-image: linear-gradient(rgba(0, 242, 96, 0.1),
                         rgba(230, 7, 1, 0.2)),
-                url(../png/header.jpeg);
+                url(./Resources/png/header.jpeg);
         height: 100vh;
         background-position: center;
         background-size: cover;
